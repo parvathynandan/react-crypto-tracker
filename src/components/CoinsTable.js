@@ -65,6 +65,9 @@ export default function CoinsTable() {
     );
   };
 
+  if(Math.random() > 0.5) {
+    return new Error('Test Error Boundary')
+  }
   return (
     <ThemeProvider theme={darkTheme}>
       <Container style={{ textAlign: "center" }}>
